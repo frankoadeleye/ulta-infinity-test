@@ -21,6 +21,11 @@
     border-right: 1px solid #d9d9d9;
   }
 
+  &__element:nth-child(3) {
+    background: #2196f3;
+    color: #ffffff;
+  }
+
   &__active {
     background: #2196f3;
     color: #ffffff;

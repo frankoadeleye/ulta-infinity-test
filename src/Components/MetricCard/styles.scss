@@ -1,0 +1,35 @@
+.metrics__cards__element {
+  display: flex;
+  flex: 1 1 0;
+  gap: 8px;
+
+  &__icon {
+    display: flex;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #8bc34a;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+
+    &__top {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 28px;
+      color: #4a4a4a;
+      gap: 4px;
+    }
+
+    &__bottom {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      color: #a0b0b9;
+    }
+  }
+}

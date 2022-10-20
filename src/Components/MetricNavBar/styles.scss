@@ -1,0 +1,32 @@
+.metrics__navbar {
+  width: 65%;
+  height: 32px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 44.4px;
+
+  &__element {
+    display: flex;
+    flex: 1 1 0;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    color: #4a4a4a;
+    font-weight: 400;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-right: 1px solid #d9d9d9;
+  }
+
+  &__active {
+    background: #2196f3;
+    color: #ffffff;
+  }
+
+  &__element:last-child {
+    border: none;
+  }
+}

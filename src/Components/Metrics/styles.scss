@@ -1,0 +1,39 @@
+.metrics {
+  background: #ffffff;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  max-width: 748px;
+  max-height: 775px;
+  padding: 39px 100px 39px 39px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin: 20px auto;
+
+  &__heading__text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 24px;
+    color: #4a4a4a;
+  }
+
+  &__cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  &__activity {
+    width: 100%;
+    display: flex;
+
+    height: auto;
+    flex-direction: column;
+    margin: 48px 0px;
+  }
+}

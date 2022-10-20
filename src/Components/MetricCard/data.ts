@@ -1,0 +1,3 @@
+const MetricsCardData = [{}];
+
+export { MetricsCardData };

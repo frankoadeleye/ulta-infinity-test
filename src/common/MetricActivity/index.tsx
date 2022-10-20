@@ -66,7 +66,14 @@ function MetricActivity({ data }: MetricProps) {
           </div>
         </div>
         <div className="right">
-          <div className="right__first">{rightFirstText}</div>
+          <div
+            className={`right__first ${
+              firstPercentage < 1 &&
+              typeof firstPercentage === "number" &&
+              "bg__red"
+            }`}>
+            {rightFirstText}
+          </div>
           <div className="right__second">
             {rightSecondText}
             <div className="right__third">{rightFirstMinText}</div>

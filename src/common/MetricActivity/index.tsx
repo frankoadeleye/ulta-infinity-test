@@ -38,8 +38,22 @@ function MetricActivity({ data }: MetricProps) {
           </div>
           <div className="text">
             <div className="first">
-              <span>{title}</span>
-              <span>{firstPercentage}</span>
+              <span
+                className={`first__span ${
+                  firstPercentage < 1 &&
+                  typeof firstPercentage === "number" &&
+                  "color__red"
+                }`}>
+                {title}
+              </span>
+              {firstPercentage !== "" && (
+                <span
+                  className={`second__span ${
+                    firstPercentage < 1 && "bg__red"
+                  }`}>
+                  {firstPercentage}%
+                </span>
+              )}
             </div>
             <div className="second">
               <span>{yesterday}</span>

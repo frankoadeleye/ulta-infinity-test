@@ -1,33 +1,30 @@
 import "./styles.scss";
 
 interface MetricProps {
-  data: {
-    firstIcon?: any;
-    secondIcon?: any;
-    title?: string;
-    firstPercentage?: any;
-    yesterday?: string;
-    last_friday?: string;
-    rightFirstText?: string;
-    rightSecondText?: string;
-    rightFirstMinText?: string;
-    rightSecondMinText?: string;
-  };
+  firstIcon?: any;
+  secondIcon?: any;
+  title?: string;
+  firstPercentage?: any;
+  yesterday?: string | number;
+  last_friday?: string | number;
+  rightFirstText?: string;
+  rightSecondText?: string;
+  rightFirstMinText?: string;
+  rightSecondMinText?: string;
 }
 
-function MetricActivity({ data }: MetricProps) {
-  const {
-    firstIcon,
-    secondIcon,
-    title,
-    firstPercentage,
-    yesterday,
-    last_friday,
-    rightFirstText,
-    rightSecondText,
-    rightFirstMinText,
-    rightSecondMinText,
-  } = data;
+function MetricActivity({
+  firstIcon,
+  secondIcon,
+  title,
+  firstPercentage,
+  yesterday,
+  last_friday,
+  rightFirstText,
+  rightSecondText,
+  rightFirstMinText,
+  rightSecondMinText,
+}: MetricProps) {
   return (
     <>
       <div className="datarow">
@@ -78,7 +75,7 @@ function MetricActivity({ data }: MetricProps) {
             {rightSecondText}
             <div className="right__third">{rightFirstMinText}</div>
             <div className="right__fourth">
-              <small>Help:</small>
+              <small>Help: </small>
               <small>{rightSecondMinText}</small>
             </div>
           </div>

@@ -1,3 +1,4 @@
+import { UltaInfinityTestData } from "Components/Metrics/data";
 import "./styles.scss";
 
 function ProgressBar() {
@@ -10,11 +11,17 @@ function ProgressBar() {
         <div className="progress__bar__chart__item--grey"></div>
       </div>
       <div className="progress__bar__texts">
-        <div className={`progress__bar__texts__item`}>
-          <span className="yellow"></span>
-          <span>Error 500: 1 256</span>
-        </div>
-        <div className={`progress__bar__texts__item`}>
+        {UltaInfinityTestData.errors_last_3days.map((data) => {
+          return (
+            <div className={`progress__bar__texts__item`}>
+              <span className="yellow"></span>
+              <span>
+                Error {data.code}: {data.count}
+              </span>
+            </div>
+          );
+        })}
+        {/* <div className={`progress__bar__texts__item`}>
           <span className="purple"></span>
           <span>Error 501: 800</span>
         </div>
@@ -25,7 +32,7 @@ function ProgressBar() {
         <div className={`progress__bar__texts__item`}>
           <span className="grey"></span>
           <span>Other: 330 </span>
-        </div>
+        </div> */}
       </div>
     </div>
   );

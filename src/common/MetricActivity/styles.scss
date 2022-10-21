@@ -146,6 +146,10 @@
       display: flex;
       align-items: center;
 
+      small:first-child {
+        margin-right: 3px;
+      }
+
       small:last-child {
         color: #2196f3;
       }

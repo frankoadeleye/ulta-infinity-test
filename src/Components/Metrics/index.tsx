@@ -61,8 +61,8 @@ function Metrics() {
             firstIcon={arrowDown}
             secondIcon={downArrow}
             firstPercentage=""
-            rightFirstText="Mobile Traffic: 100%"
-            rightSecondText="Web Traffic: 100%"
+            rightFirstText="STR: 6.2%"
+            rightSecondText="Avg. Check: 8 903"
             rightFirstMinText="You get 100% traffic on mobile and desktop devices."
             rightSecondMinText="STR, Bookings, Avg. Check"
           />
